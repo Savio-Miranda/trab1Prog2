@@ -1,5 +1,4 @@
 #include <iostream>
-#include <cmath>
 using namespace std;
 
 
@@ -45,32 +44,20 @@ class Calculadora{
 			std::cin>>b;
 			return a/b;
 		}
-		string quotientRemainder(){
-			int a, b;
-			std::cout<<"Digite o dividendo: "<<endl;
-                        std::cin>>a;
-                        std::cout<<"Digite o divisor: "<<endl;
-                        std::cin>>b;
-			int x = a%b; //resto da divisao
-			int y = a/b;
-			string z = "{x},{y}";
-			return z;
+		int piso(){
+			double valor;
+			cout<<"Digite o valor a calcular o piso: "<<endl;
+			cin>>valor;
+			return valor;
+		};		
+		int teto(){
+			double valor;
+			cout<<"Digite o valor a calcular o teto: "<<endl;
+			cin>>valor;
+			valor += 1;
+			return valor;	
+		};
 			
-			
-		
-		
-		
-		}
-		double exponential(){
-			double a, b;
-			std::cout<<"Digite a base: "<<endl;
-			std::cin>>a;
-			std::cout<<"DIgite o expoente: "<<endl;
-			std::cin>>b;
-			return pow(a, b);
-		}	
-		
-
 
 
 
@@ -79,7 +66,8 @@ class Calculadora{
 };
 int main(){
 	Calculadora x;
-	std::cout<<x.quotientRemainder()<<endl;
+	std::cout<<x.piso()<<endl;
+	std::cout<<x.teto()<<endl;
 	return 0;
 }
 

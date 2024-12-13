@@ -137,8 +137,11 @@ public:
     }
 };
 
-int main() {
-    moeda conversor;
-    conversor.converter();
-    return 0;
-}
+
+
+int main(){
+	moeda x;
+	x.converter();
+	return 0;
+
+};
