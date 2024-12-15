@@ -33,7 +33,7 @@ class temperatura{
                         cout<<"Quantos graus você quer converter? "<<endl;
                         cin>>temp;
 			temp -= 32;
-			temp = temp * (5/9);
+			temp = temp * (5.0/9.0);
 			return temp + 273.15;			
 			};
 		float kelvinCelsius(){
@@ -86,7 +86,6 @@ class temperatura{
 						float a = celsiusKelvin();
 						cout<<"A temperatura em Kelvin: "<< a <<endl;
 					};
-					break;
 				case 2: //Fahrenheit
 					//int convertida;
 					std::cout<<"Para qual unidade você deseja converter? "<<endl;
@@ -101,7 +100,6 @@ class temperatura{
 						float a = farKelvin();
 						cout<<"A temperatura em Kelvin é: "<<a<<endl;
 					};
-					break;
 				case 3: //Kelvin
 					//int convertida;
 					std::cout<<"Para qual unidade você quer converter?"<<endl;
@@ -116,7 +114,7 @@ class temperatura{
 						float a = kelvinFar();
 						cout<<"A temperatura em fahrenheit é "<<a<<endl;
 					};
-					break;
+
 		
 			};	
 	};	
